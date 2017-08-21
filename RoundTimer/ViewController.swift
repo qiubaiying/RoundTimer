@@ -7,17 +7,26 @@
 //
 
 import UIKit
+import Hero
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greyView: UIView!
+    @IBOutlet weak var redView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        redView.heroID = "foo"
+        greyView.heroID = "bar"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.performSegue(withIdentifier: "VcToVcT", sender: nil)
     }
 
 

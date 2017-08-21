@@ -13,6 +13,10 @@
 		0239716E1F4A7F38009ADA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0239716D1F4A7F38009ADA11 /* Assets.xcassets */; };
 		023971711F4A7F38009ADA11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0239716F1F4A7F38009ADA11 /* LaunchScreen.storyboard */; };
 		0239717C1F4A7F39009ADA11 /* RoundTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0239717B1F4A7F39009ADA11 /* RoundTimerTests.swift */; };
+		02C153591F4AC5A800F374ED /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C153581F4AC5A800F374ED /* ViewControllerTwo.swift */; };
+		02C1535B1F4AC84A00F374ED /* UIViewIBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1535A1F4AC84A00F374ED /* UIViewIBInspectable.swift */; };
+		218599699FB0E2F0B042AA32 /* Pods_RoundTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB338B79434E833CF61FC24C /* Pods_RoundTimer.framework */; };
+		CCCDB969C026C52137BC5F5B /* Pods_RoundTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC187CAD9908EF305C659157 /* Pods_RoundTimerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,14 @@
 		023971771F4A7F38009ADA11 /* RoundTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0239717B1F4A7F39009ADA11 /* RoundTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTimerTests.swift; sourceTree = "<group>"; };
 		0239717D1F4A7F39009ADA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C153581F4AC5A800F374ED /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		02C1535A1F4AC84A00F374ED /* UIViewIBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewIBInspectable.swift; sourceTree = "<group>"; };
+		23D3EEC562600551381C3C13 /* Pods-RoundTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoundTimer/Pods-RoundTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		A1BD812635E56966BB2074E0 /* Pods-RoundTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoundTimer/Pods-RoundTimer.release.xcconfig"; sourceTree = "<group>"; };
+		BC187CAD9908EF305C659157 /* Pods_RoundTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundTimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23A59605BB74647A5F79935 /* Pods-RoundTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoundTimerTests/Pods-RoundTimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D35BC35E4673BF103B95A6FF /* Pods-RoundTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoundTimerTests/Pods-RoundTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB338B79434E833CF61FC24C /* Pods_RoundTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218599699FB0E2F0B042AA32 /* Pods_RoundTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCDB969C026C52137BC5F5B /* Pods_RoundTimerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +76,8 @@
 				023971651F4A7F38009ADA11 /* RoundTimer */,
 				0239717A1F4A7F39009ADA11 /* RoundTimerTests */,
 				023971641F4A7F38009ADA11 /* Products */,
+				309E0BD78BD97612F545B22D /* Pods */,
+				0BD98DD2AAB97851BFC87B2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				023971661F4A7F38009ADA11 /* AppDelegate.swift */,
+				02C1535A1F4AC84A00F374ED /* UIViewIBInspectable.swift */,
 				023971681F4A7F38009ADA11 /* ViewController.swift */,
+				02C153581F4AC5A800F374ED /* ViewControllerTwo.swift */,
 				0239716A1F4A7F38009ADA11 /* Main.storyboard */,
 				0239716D1F4A7F38009ADA11 /* Assets.xcassets */,
 				0239716F1F4A7F38009ADA11 /* LaunchScreen.storyboard */,
@@ -96,6 +114,26 @@
 			path = RoundTimerTests;
 			sourceTree = "<group>";
 		};
+		0BD98DD2AAB97851BFC87B2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB338B79434E833CF61FC24C /* Pods_RoundTimer.framework */,
+				BC187CAD9908EF305C659157 /* Pods_RoundTimerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		309E0BD78BD97612F545B22D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D3EEC562600551381C3C13 /* Pods-RoundTimer.debug.xcconfig */,
+				A1BD812635E56966BB2074E0 /* Pods-RoundTimer.release.xcconfig */,
+				D35BC35E4673BF103B95A6FF /* Pods-RoundTimerTests.debug.xcconfig */,
+				D23A59605BB74647A5F79935 /* Pods-RoundTimerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 023971801F4A7F39009ADA11 /* Build configuration list for PBXNativeTarget "RoundTimer" */;
 			buildPhases = (
+				E12670AEEE4D7643A50C9309 /* [CP] Check Pods Manifest.lock */,
 				0239715F1F4A7F38009ADA11 /* Sources */,
 				023971601F4A7F38009ADA11 /* Frameworks */,
 				023971611F4A7F38009ADA11 /* Resources */,
+				858D8933828C06ACA531CCDF /* [CP] Embed Pods Frameworks */,
+				92DE40F7285090A4432B53F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 023971831F4A7F39009ADA11 /* Build configuration list for PBXNativeTarget "RoundTimerTests" */;
 			buildPhases = (
+				AD3D68A91D58DFDE69902AF4 /* [CP] Check Pods Manifest.lock */,
 				023971731F4A7F38009ADA11 /* Sources */,
 				023971741F4A7F38009ADA11 /* Frameworks */,
 				023971751F4A7F38009ADA11 /* Resources */,
+				6BED3BB9DD7F6B83421B8BB8 /* [CP] Embed Pods Frameworks */,
+				4D0B4FD33312DF67FF20E05E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,7 +190,7 @@
 				TargetAttributes = {
 					023971621F4A7F38009ADA11 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = ENQNC23VW9;
+						DevelopmentTeam = DP8944294N;
 						ProvisioningStyle = Automatic;
 					};
 					023971761F4A7F38009ADA11 = {
@@ -196,6 +240,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D0B4FD33312DF67FF20E05E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoundTimerTests/Pods-RoundTimerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BED3BB9DD7F6B83421B8BB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoundTimerTests/Pods-RoundTimerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		858D8933828C06ACA531CCDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoundTimer/Pods-RoundTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92DE40F7285090A4432B53F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoundTimer/Pods-RoundTimer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD3D68A91D58DFDE69902AF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E12670AEEE4D7643A50C9309 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0239715F1F4A7F38009ADA11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,6 +340,8 @@
 			files = (
 				023971691F4A7F38009ADA11 /* ViewController.swift in Sources */,
 				023971671F4A7F38009ADA11 /* AppDelegate.swift in Sources */,
+				02C1535B1F4AC84A00F374ED /* UIViewIBInspectable.swift in Sources */,
+				02C153591F4AC5A800F374ED /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +478,10 @@
 		};
 		023971811F4A7F39009ADA11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D3EEC562600551381C3C13 /* Pods-RoundTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ENQNC23VW9;
+				DEVELOPMENT_TEAM = DP8944294N;
 				INFOPLIST_FILE = RoundTimer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,9 +493,10 @@
 		};
 		023971821F4A7F39009ADA11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BD812635E56966BB2074E0 /* Pods-RoundTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ENQNC23VW9;
+				DEVELOPMENT_TEAM = DP8944294N;
 				INFOPLIST_FILE = RoundTimer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -367,6 +508,7 @@
 		};
 		023971841F4A7F39009ADA11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D35BC35E4673BF103B95A6FF /* Pods-RoundTimerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -382,6 +524,7 @@
 		};
 		023971851F4A7F39009ADA11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23A59605BB74647A5F79935 /* Pods-RoundTimerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
