@@ -7,7 +7,8 @@ target 'RoundTimer' do
 
   # Pods for RoundTimer
 
-   pod ‘Hero’
+   pod 'Hero'
+   pod 'HGCircularSlider'
 
   target 'RoundTimerTests' do
     inherit! :search_paths

@@ -1,12 +1,15 @@
 PODS:
   - Hero (0.3.6)
+  - HGCircularSlider (2.0.0)
 
 DEPENDENCIES:
   - Hero
+  - HGCircularSlider
 
 SPEC CHECKSUMS:
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
+  HGCircularSlider: 92e2ee098c814709f455b8f46cd9008147f6a869
 
-PODFILE CHECKSUM: f218576462afe3279c8e2e6276f24f0edefcec34
+PODFILE CHECKSUM: 57f7bb2e19c60faa6ec3afe8ba1b533c36d0a3c6
 
 COCOAPODS: 1.2.1

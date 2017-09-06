@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +28,130 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIc-tJ-FiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="45"/>
+            <point key="canvasLocation" x="399" y="-611"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="JEl-eD-In7">
+            <objects>
+                <viewController id="yan-jx-0ZR" customClass="ViewControllerThree" customModule="RoundTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8cr-EK-m74"/>
+                        <viewControllerLayoutGuide type="bottom" id="8DQ-2A-J6J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ojo-RH-uOF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cA2-CI-89n" customClass="CircularSlider" customModule="HGCircularSlider">
+                                <rect key="frame" x="20" y="181" width="374" height="374"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVj-nQ-VTI" customClass="CircularSlider" customModule="HGCircularSlider">
+                                        <rect key="frame" x="80" y="80.333333333333314" width="214" height="214"/>
+                                        <color key="backgroundColor" red="0.3921568627" green="0.70980392160000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iVj-nQ-VTI" secondAttribute="height" id="BoQ-HE-3p7"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackFillColor">
+                                                <color key="value" red="0.30588235289999999" green="0.72549019609999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                                                <real key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endThumbTintColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeHighlightedColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="diskFillColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="diskColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="thumbLineWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.50196078430000002" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="iVj-nQ-VTI" firstAttribute="centerX" secondItem="cA2-CI-89n" secondAttribute="centerX" id="3RB-lU-Zey"/>
+                                    <constraint firstItem="iVj-nQ-VTI" firstAttribute="width" secondItem="iVj-nQ-VTI" secondAttribute="height" id="H53-Qf-EoZ"/>
+                                    <constraint firstAttribute="centerY" secondItem="cA2-CI-89n" secondAttribute="centerY" id="Wqh-23-WP7"/>
+                                    <constraint firstItem="iVj-nQ-VTI" firstAttribute="centerY" secondItem="cA2-CI-89n" secondAttribute="centerY" id="ZTq-nZ-Nkd"/>
+                                    <constraint firstAttribute="leading" secondItem="cA2-CI-89n" secondAttribute="leading" id="cdK-EM-CjM"/>
+                                    <constraint firstItem="iVj-nQ-VTI" firstAttribute="leading" secondItem="cA2-CI-89n" secondAttribute="leading" constant="80" id="hDE-4a-KHE"/>
+                                    <constraint firstAttribute="centerX" secondItem="cA2-CI-89n" secondAttribute="centerX" id="rTC-OP-F5e"/>
+                                    <constraint firstAttribute="trailing" secondItem="cA2-CI-89n" secondAttribute="trailing" id="tIU-YS-z1e"/>
+                                    <constraint firstAttribute="width" secondItem="cA2-CI-89n" secondAttribute="height" id="wwn-25-yAF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackFillColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbTintColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeHighlightedColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskFillColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbLineWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cA2-CI-89n" firstAttribute="leading" secondItem="Ojo-RH-uOF" secondAttribute="leading" constant="20" id="6Fg-Lw-Qpk"/>
+                            <constraint firstItem="cA2-CI-89n" firstAttribute="centerX" secondItem="Ojo-RH-uOF" secondAttribute="centerX" id="Mv3-0F-fFx"/>
+                            <constraint firstItem="cA2-CI-89n" firstAttribute="centerY" secondItem="Ojo-RH-uOF" secondAttribute="centerY" id="p9t-UP-d1e"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="FCz-0d-FzS"/>
+                    <connections>
+                        <outlet property="sportSlider" destination="cA2-CI-89n" id="qt5-43-ZtJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXY-so-mtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082.608695652174" y="-611.41304347826087"/>
         </scene>
         <!--训练-->
         <scene sceneID="55D-mD-NDK">
@@ -149,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N23-vg-MyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418.84057971014494" y="-610.59782608695662"/>
+            <point key="canvasLocation" x="-296" y="149"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sor-Ru-wIb">
@@ -163,11 +288,12 @@
                     <connections>
                         <segue destination="Bqf-sw-azo" kind="relationship" relationship="viewControllers" id="e9N-fr-PIF"/>
                         <segue destination="slv-cc-u7V" kind="relationship" relationship="viewControllers" id="7bX-IR-VmL"/>
+                        <segue destination="yan-jx-0ZR" kind="relationship" relationship="viewControllers" id="bzQ-8e-MxW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="974-8a-2I0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1246" y="-283"/>
+            <point key="canvasLocation" x="399" y="-1355"/>
         </scene>
     </scenes>
 </document>
